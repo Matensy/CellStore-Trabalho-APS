@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CellStore - Sua loja de smartphones e notebooks</title>
+    <!-- CSS do Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        /* CSS Personalizado */
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+        .feedback-item {
+            margin-bottom: 1rem;
+        }
+        .feedback-item i {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+        .faq-item h5 {
+            font-weight: bold;
+        }
+        .faq-item p {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicial.html">CellStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="produtos.html">Produtos</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="container-fluid bg-primary text-center text-white py-5">
+        <h1 class="display-4 fw-bold">Bem-vindo à CellStore</h1>
+        <p class="lead">Sua loja de smartphones e notebooks.</p>
+        <a href="produtos.html" class="btn btn-lg btn-primary">Compre agora</a>
+    </div>
+
+    <!-- Sobre a loja -->
+    <div class="container py-5">
+        <h2 class="text-center mb-5">Quem somos</h2>
+        <p>A CellStore é uma loja online de smartphones e notebooks que oferece aos clientes uma ampla seleção de produtos de alta qualidade a preços acessíveis. Nós nos orgulhamos de fornecer um excelente atendimento ao cliente e garantir a satisfação do cliente em cada compra.</p>
+    </div>
+
+    <!-- Feedbacks -->
+<div class="container py-5">
+  <h2 class="text-center mb-5">Feedbacks</h2>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="feedback-item">
+              <i class="bi bi-person-fill"></i>
+              <p>"Adorei o meu novo iPhone! Excelente atendimento da equipe da CellStore. Com certeza voltarei a comprar."</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="feedback-item">
+              <i class="bi bi-person-fill"></i>
+              <p>"Comprei um notebook para o meu filho e ele adorou. A entrega foi rápida e o produto chegou em perfeitas condições. Recomendo!"</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="feedback-item">
+              <i class="bi bi-person-fill"></i>
+              <p>"Comprei um smartphone e tive um pequeno problema com a entrega, mas a equipe da CellStore resolveu tudo rapidamente. Excelente atendimento!"</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Dúvidas frequentes -->
+<div class="container py-5">
+  <h2 class="text-center mb-5">Dúvidas frequentes</h2>
+  <div class="faq-item">
+      <h5>Quais são as formas de pagamento aceitas?</h5>
+      <p>A CellStore aceita pagamentos via cartão de crédito, boleto bancário e transferência bancária.</p>
+  </div>
+  <div class="faq-item">
+      <h5>Qual é o prazo de entrega?</h5>
+      <p>O prazo de entrega varia de acordo com o CEP de destino e a forma de envio escolhida pelo cliente. Em geral, as entregas são realizadas em até 10 dias úteis.</p>
+  </div>
+  <div class="faq-item">
+      <h5>Posso devolver um produto?</h5>
+      <p>Sim, a CellStore aceita devoluções de produtos em até 7 dias após o recebimento. Para mais informações, consulte nossa política de devoluções.</p>
+  </div>
+</div>
+
+<!-- Contato -->
+<div class="container py-5">
+  <h2 class="text-center mb-5">Contato</h2>
+  <div class="row">
+      <div class="col-md-6">
+          <p>Entre em contato conosco para tirar dúvidas ou fazer sugestões:</p>
+          <ul class="list-unstyled">
+              <li><i class="bi bi-geo-alt-fill"></i> Rua das Flores, 123 - Centro, São Paulo - SP</li>
+              <li><i class="bi bi-telephone-fill"></i> (11) 1234-5678</li>
+              <li><i class="bi bi-envelope-fill"></i> contato@cellstore.com.br</li>
+          </ul>
+      </div>
+      <div class="col-md-6">
+          <form>
+              <div class="mb-3">
+                  <label for="name" class="form-label">Nome completo</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+

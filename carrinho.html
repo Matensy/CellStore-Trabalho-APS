@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CellStore - Carrinho de Compras</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #212529;
+      color: #fff;
+    }
+
+    .container {
+      padding-top: 50px;
+    }
+
+    .card {
+      background-color: #343a40;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .card-header {
+      background-color: #1c1e22;
+      border-bottom: none;
+    }
+
+    .card-title {
+      margin-bottom: 0;
+      font-size: 1.25rem;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-footer {
+      background-color: #1c1e22;
+      border-top: none;
+      color: #fff;
+    }
+
+    .product-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .product-price {
+      font-weight: bold;
+    }
+
+    .btn {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+
+    .btn:active {
+      background-color: #0062cc;
+      border-color: #005cbf;
+    }
+
+    .btn-primary {
+      background-color: #17a2b8;
+      border-color: #17a2b8;
+    }
+
+    .btn-primary:hover {
+      background-color: #138496;
+      border-color: #117a8b;
+    }
+
+    .btn-primary:active {
+      background-color: #117a8b;
+      border-color: #10707f;
+    }
+
+    .btn-danger {
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+      background-color: #c82333;
+      border-color: #bd2130;
+    }
+
+    .btn-danger:active {
+      background-color: #bd2130;
+      border-color: #b21f2d;
+    }
+
+    .total-price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Carrinho de Compras</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Produtos</h2>
+        </div>
+        <div class="card-body">
+        <div class="row">
+        <div class="col-md-6">
+        <h4 class="product-name">Iphone 14 Pro Max</h4>
+        <p class="product-price">R$ 8.000,00</p>
+        </div>
+        <div class="col-md-3">
+        <input type="number" min="0" class="form-control quantity" value="0">
+        </div>
+        <div class="col-md-3">
+        <button class="btn btn-primary add-to-cart">Adicionar</button>
+        </div>
+        </div>
+        </div>
+        </div>    <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Computador All in One LG 22V30R</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="product-name">Computador All in One LG 22V30R</h4>
+                  <p class="product-price">R$ 2.049,50</p>
+                </div>
+                <div class="col-md-3">
+                  <input type="number" min="0" class="form-control quantity" value="0">
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-primary add-to-cart">Adicionar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Smartphone Motorola Moto Edge 30 Pro</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="product-name">Smartphone Motorola Moto Edge 30 Pro</h4>
+                  <p class="product-price">R$ 3.999,99</p>
+                </div>
+                <div class="col-md-3">
+                  <input type="number" min="0" class="form-control quantity" value="0">
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-primary add-to-cart">Adicionar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Notebook Gamer Lenovo Gaming</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="product-name">Notebook Gamer Lenovo Gaming</h4>
+                  <p class="product-price">R$ 3.699,99</p>
+                </div>
+                <div class="col-md-3">
+                  <input type="number" min="0" class="form-control quantity" value="0">
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-primary add-to-cart">Adicionar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-footer">
+              <h2 class="total-price">Valor total: R$ 0,00</h2>
+            </div>
+          </div>
+        </<div class="col-md-12">
+            <button class="btn btn-danger clear-cart">Limpar Carrinho</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          <script src="https://unpkg.com/jquery"></script>
+<script>
+  $(document).ready(function() {
+    // Variáveis do carrinho
+    var cartItems = [];
+    var total = 0;
+
+    // Atualizar valor total
+function updateTotal() {
+  var totalPrice = 0;
+  for (var i = 0; i < cartItems.length; i++) {
+    totalPrice += parseFloat((cartItems[i].price * cartItems[i].quantity).toFixed(2));
+  }
+  $(".total-price").text("Valor total: R$ " + totalPrice.toFixed(2));
+}
+
+    // Adicionar ao carrinho
+    $(".add-to-cart").click(function() {
+      var productName = $(this).closest(".card-body").find(".product-name").text();
+      var productPrice = parseFloat($(this).closest(".card-body").find(".product-price").text().replace("R$", "").replace(".", "").replace(",", "."));
+      var productQuantity = parseInt($(this).closest(".card-body").find(".quantity").val());
+
+      if (productQuantity > 0) {
+        var item = {
+          name: productName,
+          price: productPrice,
+          quantity: productQuantity
+        };
+
+        cartItems.push(item);
+        updateTotal();
+      }
+    });
+
+    // Remover do carrinho
+    $(".clear-cart").click(function() {
+      cartItems = [];
+      updateTotal();
+    });
+
+    // Atualizar quantidade
+    $(".quantity").change(function() {
+      var index = $(".quantity").index(this);
+      var newQuantity = parseInt($(this).val());
+
+      if (newQuantity >= 0) {
+        cartItems[index].quantity = newQuantity;
+        updateTotal();
+      }
+    });
+  });
+</script>
+
+          </body>
+          </html>      
